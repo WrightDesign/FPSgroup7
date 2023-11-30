@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     private void EnemyMove()
     {
 
-        
+        transform.position = Vector3.MoveTowards(transform.position, trackPoint.transform.position, speed * Time.deltaTime);
         
        /*  if (goingBack == true)
         {
@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
             {
                 transform.position += Vector3.forward * speed * Time.deltaTime;
             }
-        } */
+        }
         
         if (goingLeft == true)
         {
@@ -100,7 +100,7 @@ public class Enemy : MonoBehaviour
             {
                 transform.position += Vector3.right * speed * Time.deltaTime;
             }
-        }
+        } */
     }
 
 

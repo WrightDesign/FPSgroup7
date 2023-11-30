@@ -58,6 +58,20 @@ public class PlayerController : MonoBehaviour
         {
             Respawn();
         }
+
+        /* Vector3 mousePosition = Input.mousePosition;
+        
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+    
+        mousePosition.y = transform.position.y;
+        transform.rotation = Quaternion.LookRotation(mousePosition); 
+        transform.LookAt(mousePosition); */
+
+        Vector3 mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.y = transform.position.y;
+        transform.LookAt(mousePos);
+        
     }
 
     private void CheckForDanger()
