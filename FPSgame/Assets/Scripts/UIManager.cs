@@ -10,7 +10,8 @@ using UnityEngine.SceneManagement;
  * Date: [12/08/2023]
  * [This controls all the main components to the pause and main menu.]
  */
-
+//Shane Wright
+//Kimo Quickreyes
 
 /// <summary>
 /// The Main Menu.

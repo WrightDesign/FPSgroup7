@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 //shane wright
 //10-2023
+//Kimo Quick Reyes
+//Barragan, Maritza
 public class Enemy : MonoBehaviour
 {
     public GameObject trackPoint;
@@ -54,53 +56,6 @@ public class Enemy : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, trackPoint.transform.position, speed * Time.deltaTime);
         
-       /*  if (goingBack == true)
-        {
-            if (transform.position.z <= trackPos.z)
-            {
-                goingBack = false;
-            }
-            else
-            {
-                transform.position += Vector3.back * speed * Time.deltaTime;
-            }
-        }
-
-        else
-        {
-            if (transform.position.z >= trackPos.z)
-            {
-                goingBack = true;
-            }
-            else
-            {
-                transform.position += Vector3.forward * speed * Time.deltaTime;
-            }
-        }
-        
-        if (goingLeft == true)
-        {
-            if (transform.position.x <= trackPos.x)
-            {
-                goingLeft = false;
-            }
-            else
-            {
-                transform.position += Vector3.left * speed * Time.deltaTime;
-            }
-        }
-
-        else
-        {
-            if (transform.position.x >= trackPos.x)
-            {
-                goingLeft = true;
-            }
-            else
-            {
-                transform.position += Vector3.right * speed * Time.deltaTime;
-            }
-        } */
     }
 
 

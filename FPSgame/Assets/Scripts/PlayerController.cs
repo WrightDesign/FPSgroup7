@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 //wright shane
 //10-2023
+//Kimo Quick Reyes
+//Barragan, Maritza
 public class PlayerController : MonoBehaviour
 {
     public float coinsCollected = 0;
@@ -166,7 +168,7 @@ public class PlayerController : MonoBehaviour
 
         if (lives == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 
